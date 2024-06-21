@@ -12,6 +12,10 @@ permalink: pretty
 permalink: /:title
 keywords: [podcast, jekyll]
 
+company:
+  name: "Company Name"
+  url: "#"
+
 #Plugins
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 
