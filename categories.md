@@ -9,7 +9,7 @@ div:target h2{
   background: #009fe3;
   border-radius: 5px;
   color: #fff;
-  max-width: max-content
+  max-width: max-content;
   -webkit-text-stroke: 3px #007bbd;
 
 } 
