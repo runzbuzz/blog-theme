@@ -10,7 +10,7 @@ div:target h2{
   border-radius: 5px;
   color: #fff;
   //max-width: max-content;
-  -webkit-text-stroke: 1px #007bbd;
+  //-webkit-text-stroke: 1px #007bbd;
 
 } 
   
