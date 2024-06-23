@@ -1,7 +1,8 @@
 #header{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    //justify-content: flex-start;
+    justify-content: space-between; // to align the items to the right
     min-height: 50px;
     margin-bottom: 160px;
     h1{
@@ -14,7 +15,8 @@
     }
 
     #desktop-nav{
-      justify-content: flex-end; // to make it aligned to the right  
+    display: flex;
+    justify-content: flex-end; // to make it aligned to the right  
       #desktop-menu{
         list-style: none;
         margin: 0;
