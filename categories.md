@@ -5,7 +5,7 @@ title: Categories
 ---
 
 <style>
-div h2:target {
+div:target h2{
   background: yellow;
   color: "#007bbd";
 } 
