@@ -14,6 +14,7 @@
     }
 
     #desktop-nav{
+      justify-content: flex-end; // to make it aligned to the right  
       #desktop-menu{
         list-style: none;
         margin: 0;
@@ -30,7 +31,7 @@
             display: block;
             text-decoration: none;
             color: white;
-            font-weight: bold;
+            //font-weight: bold;
             //font-size: 1.5rem;
               // added font styling to the nav items
                 font-family: "Stint Ultra Condensed", serif;
