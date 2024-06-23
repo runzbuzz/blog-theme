@@ -8,6 +8,8 @@ title: Categories
 div:target h2{
   background: #009fe3;
   color: "white";
+  radius: 5px;
+  
 } 
   
 </style>
