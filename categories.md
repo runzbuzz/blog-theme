@@ -6,8 +6,9 @@ title: Categories
 
 <style>
 div:target h2{
-  background: yellow;
-  color: "#007bbd";
+  //background: yellow;
+  color: #007bbd;
+  style: bold;
 } 
   
 </style>
