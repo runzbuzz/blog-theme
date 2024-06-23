@@ -5,9 +5,11 @@ title: Categories
 ---
 
 <style>
-div:target {
+div h2:target {
   background: yellow;
+  color: "#007bbd";
 } 
+  
 </style>
 
 {% assign sorted_categories = site.categories | sort %}
