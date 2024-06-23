@@ -7,9 +7,13 @@ title: Categories
 <style>
 div:target h2{
   background: #009fe3;
-  color: "white";
-  radius: 5px;
-  
+  border-radius: 5px;
+  color: #fff;
+  text-shadow:
+    3px 3px 0 #007bbd,
+    -3px 3px 0 #007bbd,
+    -3px -3px 0 #007bbd,
+    3px -3px 0 #007bbd;
 } 
   
 </style>
