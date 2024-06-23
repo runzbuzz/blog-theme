@@ -28,20 +28,10 @@ layout: default
                 {{- page.title -}}
         {% endcapture %}
 
-        {% include player.html file = file title = title %}
-
-        {% if page.videoid %}
-                {% include video.html videoid = page.videoid %}
-        {% endif %}
-
         {{ content }}
 
         {% if site.data.settings.shownotes == true %}
                 {% include shownotes.html %}
-        {% endif %}
-
-        
+        {% endif %}        
 </div>
-{% if site.settings.disqus-shortname %}
-        {%- include disqus.html -%}
-{% endif %}
+
