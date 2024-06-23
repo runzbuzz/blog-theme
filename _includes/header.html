@@ -5,7 +5,7 @@
       <div id = "desktop-nav">
         <ul id = "desktop-menu">
           {% for item in site.data.settings.pages  %}
-          <li><a href="{{ item.link | absolute_url}}"> {{ item.name }}</a></li>
+          <li><a class="roboto-slab-400" href="{{ item.link | absolute_url}}"> {{ item.name }}</a></li>
           {% endfor %}
         </ul>
       </div>
