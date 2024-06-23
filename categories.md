@@ -9,11 +9,9 @@ div:target h2{
   background: #009fe3;
   border-radius: 5px;
   color: #fff;
-  text-shadow:
-    3px 3px 0 #007bbd,
-    -3px 3px 0 #007bbd,
-    -3px -3px 0 #007bbd,
-    3px -3px 0 #007bbd;
+  max-width: max-content
+  -webkit-text-stroke: 3px #007bbd;
+
 } 
   
 </style>
