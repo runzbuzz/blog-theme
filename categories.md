@@ -3,6 +3,13 @@ layout: default
 permalink: /categories
 title: Categories
 ---
+
+<style>
+h2:target {
+  background: yellow;
+} 
+</style>
+
 {% assign sorted_categories = site.categories | sort %}
 {% for category in sorted_categories %}
   <div class="archive-group">
