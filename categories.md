@@ -5,7 +5,7 @@ title: Categories
 ---
 
 <style>
-h2:target {
+div:target {
   background: yellow;
 } 
 </style>
