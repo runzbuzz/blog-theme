@@ -6,6 +6,7 @@ $instagram: #e1306c;
 $facebook: #3b5998;
 $youtube: #ff0000;
 $grey: #a2a2a2;
+$linkedin: #0e76a8;
 
 
 .container{
@@ -87,6 +88,10 @@ $grey: #a2a2a2;
             #youtube:hover{
                 color: $youtube;
             }
+	    #linkedin:hover{
+		color: $linkedin;
+	    }
+		
         }
     }
 }
