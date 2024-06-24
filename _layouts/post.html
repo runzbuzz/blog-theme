@@ -13,20 +13,12 @@ layout: default
         </div>
         <h2 style="padding-top: 1.5rem;">{{page.title}}</h2>
 
-        Step1: 
-        {{ page.cover | prepend: "/assets/forposts/" }}
-        Step2: 
-        {{ page.cover | prepend: "/assets/forposts/" | absolute_url}}
-
         
         {% if page.cover %}
                 <img src="{{ page.cover | prepend: "/assets/forposts/" | absolute_url}}" alt="Post Cover">
-        {% else %}
-                Do nothing
-                <img src="{{ "/assets/img/Podcast_Cover_500.jpg" | absolute_url}}" alt="Podcast Cover">
         {% endif %}
         
-        <p>{{page.description}} (cover: {{post.cover}} / {{page.cover}}  and videoid: {{page.videoid}} and 2 {{page.videoid2}})</p>
+        <p style="align: center, color: #3b3b3b;">{{page.description}}</p>
                 
         {{ content }}
     
