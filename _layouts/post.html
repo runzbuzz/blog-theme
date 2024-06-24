@@ -15,11 +15,7 @@ layout: default
         
         <p>{{page.description}} (cover: {{post.cover}} and videoid: {{page.videoid}} )</p>
 
-        {% if post.cover %}
-                <img src="{{post.cover}}" alt="Podcast Cover">
-        {% else %}
-                <img src="{{ "/assets/img/Podcast_Cover_500.jpg" | absolute_url}}" alt="Podcast Cover">
-        {% endif %}
+
         
         
         {{ content }}
