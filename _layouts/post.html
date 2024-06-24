@@ -12,13 +12,13 @@ layout: default
                 {% endfor %}
         </div>
         <h2 style="padding-top: 1.5rem;">{{page.title}}</h2>
+        <p style=" text-align: center; color: #3b3b3b;font-size: 1rem; padding-top: 1rem; padding-bottom: 1rem;">{{page.description}}</p>
 
         
         {% if page.cover %}
                 <img src="{{ page.cover | prepend: "/assets/forposts/" | absolute_url}}" alt="Post Cover">
         {% endif %}
         
-        <p style=" text-align: center; color: #3b3b3b;font-size: 1rem;">{{page.description}}</p>
                 
         {{ content }}
     
