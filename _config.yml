@@ -9,7 +9,7 @@ author:
   email: "alessiofranceschi2@gmail.com"
   url: "https://alessiofranceschi.me"
 permalink: pretty
-permalink: /:title
+#permalink: /:title
 keywords: [podcast, jekyll]
 
 company:
