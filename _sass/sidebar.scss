@@ -1,5 +1,5 @@
 $twitter: #1DA1F2;
-$x: #1DA1F2;
+$x-twitter: #1DA1F2;
 $rss: #f26522;
 $mail: #5d5c5d;
 $instagram: #e1306c;
@@ -7,13 +7,6 @@ $facebook: #3b5998;
 $youtube: #ff0000;
 $grey: #a2a2a2;
 
-.fa.fa-x{
-    font-family:sans-serif;
-}
-.fa.fa-x::before{
-	content:"𝕏";
-	font-size:1.2em;
-}
 
 .container{
     .sidebar{
@@ -76,7 +69,7 @@ $grey: #a2a2a2;
             #twitter:hover{
                 color: $twitter;
             }
-	    #x:hover{
+	    #x-twitter:hover{
                 color: $x;
             }
             #rss:hover{
