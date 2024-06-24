@@ -2,9 +2,6 @@
 layout: default
 ---
 
-        {{ content }}
-
-
 {% for post in paginator.posts %}
 
 <div class="post">
@@ -13,9 +10,9 @@ layout: default
       {% if post.cover %}
         <img src="{{ post.cover | prepend: "/assets/forposts/" | absolute_url}}" alt="Podcast Cover">
       {% else %}
-      	<!-- -->
+      	<!-- 
         <img src="{{ "/assets/img/sidebar-mascot.png" | absolute_url}}" alt="Podcast Cover">
-        
+        -->
       {% endif %}
     </div>
 
