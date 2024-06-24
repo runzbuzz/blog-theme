@@ -20,8 +20,9 @@ layout: default
 
         
         {% if page.cover %}
-                <img src="{{ "/assets/forposts/{{page.cover}}"  | absolute_url}}" alt="Post Cover">
+                <img src="{{ page.cover | prepend: "/assets/forposts/" | absolute_url}}" alt="Post Cover">
         {% else %}
+                Do nothing
                 <img src="{{ "/assets/img/Podcast_Cover_500.jpg" | absolute_url}}" alt="Podcast Cover">
         {% endif %}
         
