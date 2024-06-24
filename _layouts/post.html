@@ -12,12 +12,15 @@ layout: default
                 {% endfor %}
         </div>
         <h2 style="padding-top: 1.5rem;">{{page.title}}</h2>
+
+        {% if page.cover %}
+                <img src="{{page.cover}}" alt="Post Cover">
+        {% else %}
+                <img src="{{ "/assets/img/Podcast_Cover_500.jpg" | absolute_url}}" alt="Podcast Cover">
+        {% endif %}
         
         <p>{{page.description}} (cover: {{post.cover}} / {{page.cover}}  and videoid: {{page.videoid}} and 2 {{page.videoid2}})</p>
-
-
-        
-        
+                
         {{ content }}
     
 </div>
