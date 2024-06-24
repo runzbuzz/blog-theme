@@ -16,6 +16,7 @@
 			  height: 100%;
 			  aspect-ratio : 1 / 1;
 	        img{
+	        	object-fit: cover;
 	        	display: block;
 	        	width: 210px;
 	           //width: auto;
