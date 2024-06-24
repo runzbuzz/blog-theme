@@ -12,6 +12,7 @@ social:
   - {icon: 'twitter', type: "brand", link: 'https://twitter.com/ArteLettura'}
   - {icon: 'x-twitter', type: "brand", link: 'https://x.com/ArteLettura'}
   - {icon: 'facebook', type: "brand", link: '#'}
+  - {icon: 'linkedin', type: "brand", link: '#'}
   - {icon: 'youtube', type: "brand", link: '#'}  
   - {icon: 'envelope', type: "solid", link: 'mailto:alessiofranceschi2@gmail.com'}
   - {icon: 'rss', type: "solid", link: "#"}
