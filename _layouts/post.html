@@ -13,8 +13,10 @@ layout: default
         </div>
         <h2 style="padding-top: 1.5rem;">{{page.title}}</h2>
 
+        {{ "/assets/forposts/{{page.cover}}"  | absolute_url}}
+        
         {% if page.cover %}
-                <img src="{{page.cover}}" alt="Post Cover">
+                <img src="{{ "/assets/forposts/{{page.cover}}"  | absolute_url}}" alt="Post Cover">
         {% else %}
                 <img src="{{ "/assets/img/Podcast_Cover_500.jpg" | absolute_url}}" alt="Podcast Cover">
         {% endif %}
