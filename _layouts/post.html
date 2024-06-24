@@ -13,7 +13,11 @@ layout: default
         </div>
         <h2 style="padding-top: 1.5rem;">{{page.title}}</h2>
 
-        {{ "/assets/forposts/{{page.cover}}"  | absolute_url}}
+        Step1: 
+        {{ page.cover | prepend: "/assets/forposts/" }}
+        Step2: 
+        {{ page.cover | prepend: "/assets/forposts/" | absolute_url}}
+
         
         {% if page.cover %}
                 <img src="{{ "/assets/forposts/{{page.cover}}"  | absolute_url}}" alt="Post Cover">
