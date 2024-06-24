@@ -2,6 +2,24 @@
 layout: default
 ---
 
+<style>
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #6b8fab;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+
+       position: relative;
+			  top: 50%;
+			  -ms-transform: translateY(-50%);
+			  transform: translateY(-50%);   
+  
+}
+</style>
+
 <div class = "single-post">
         <div class="categories">
                 {% assign categories = page.categories %}
@@ -11,12 +29,25 @@ layout: default
                   {% unless forloop.last %}&nbsp;{% endunless %} 
                 {% endfor %}
         </div>
-        <h2 style="padding-top: 1.5rem;">{{page.title}}</h2>
-        <p style=" text-align: center; color: #6b8fab;font-size: 1rem; padding-top: 0.5rem; padding-bottom: 1rem;font-style: italic;">{{page.description}}</p>
+        <h1 style="padding-top: 1.5rem;">{{page.title}}</h1>
 
+        	{%if page.length%}
+		        
+		        <p style=" text-align: center; color: #6b8fab;font-size: 1rem; padding-top: 0.5rem; font-style: bold;"> 
+		        
+		        {% if page.author %}Written by {{page.author}} <span class="dot"></span> {% endif %}
+		      
+		        Updated {{ page.date | date: "%-d %B %Y" }}
+		        <span class="dot"></span>
+		        {{page.length}}—minute read </p>
+			{%endif%}
+        
+                <p style=" text-align: center; color: #6b8fab;font-size: 1.1rem; padding-top: 0.75rem; padding-bottom: 1rem;font-style: italic;">{{page.description}}</p>
         
         {% if page.cover %}
+        		<!--
                 <img src="{{ page.cover | prepend: "/assets/forposts/" | absolute_url}}" alt="Post Cover">
+                -->
         {% endif %}
         
                 

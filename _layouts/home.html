@@ -8,34 +8,34 @@ layout: default
 
     <div class = "cover-img">
       {% if post.cover %}
-        <img src="{{post.cover}}" alt="Podcast Cover">
+        <img src="{{ post.cover | prepend: "/assets/forposts/" | absolute_url}}" alt="Podcast Cover">
       {% else %}
-        <img src="{{ "/assets/img/runz.png" | absolute_url}}" alt="Podcast Cover">
+      	<!-- -->
+        <img src="{{ "/assets/img/sidebar-mascot.png" | absolute_url}}" alt="Podcast Cover">
+        
       {% endif %}
     </div>
 
-    <div class = title>
+    <div class = "title">
         <h2 id = "post-title"><a href="{{ post.url  | absolute_url }}">{{ post.title }}</a></h2>
 
         <div class = "info">
             <span>
               {% if site.data.settings.translate-date == true %}
-                <i class="far fa-calendar" aria-hidden="true"></i>{%- include date.html date=post.date -%}<span> - </span><i class="far fa-clock"></i> {{post.length}}
+                <i class="far fa-calendar" aria-hidden="true"></i>{%- include date.html date=post.date -%}<span> 
+                {%if post.length%}
+                 — </span><i class="far fa-clock"></i> {{post.length}}-minute read
+                 {%endif%}
               {% else %}
-                <i class="far fa-calendar" aria-hidden="true"></i>{{ post.date | date_to_long_string}}<span> - </span><i class="far fa-clock"></i> {{post.length}}
+                <i class="far fa-calendar" aria-hidden="true"></i>{{ post.date | date_to_long_string}}<span>
+                {%if post.length%}
+                 — </span><i class="far fa-clock"></i> {{post.length}}-minute read
+                 {%endif%}
               {% endif %}
             </span>
         </div>
     </div>
 
-
-    {% capture file %}
-        {{- post.file -}}
-    {% endcapture %}
-    {% capture title %}
-        {{- post.title -}}
-    {% endcapture %}
-    {% include player.html file=file title=title %}
 
     <div class = "long-excerpt">
         <p>

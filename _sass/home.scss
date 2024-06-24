@@ -7,6 +7,29 @@
         height: 210px;
         margin-bottom: 80px;
         background-color: white;
+		border-radius: 5px;
+
+        .cover-img{
+        	display: inline;
+        	position: relative;
+			  //border: 3px solid green;
+			  height: 100%;
+			  aspect-ratio : 1 / 1;
+	        img{
+	        	display: block;
+	        	width: 210px;
+	           //width: auto;
+	           height: 210px;
+	           float: left;
+	           margin-right: 10px;
+	           // The following is to center the image vertically           
+	           position: relative;
+			  top: 50%;
+			  -ms-transform: translateY(-50%);
+			  transform: translateY(-50%);   
+	        }
+        }
+
         p{
             padding: 0 5px;
         }
@@ -15,19 +38,12 @@
         }
         h2{
             padding-top: 5px;
-            margin-right: 5px;
+            margin-right: 5px;   
             a{
-                margin-bottom: 10px;
+                margin-bottom: 5px;
+                display: inline-block;
+                margin-top: 0.5rem;
             }
-        }
-        img{
-           width: auto;
-           height: 210px;
-           float: left;
-           margin-right: 10px;
-        }
-        .player-container{
-            margin: 10px auto;
         }
         .info{
             margin-bottom: 10px;
