@@ -9,9 +9,10 @@ author:
   email: "alessiofranceschi2@gmail.com"
   url: "https://alessiofranceschi.me"
 
-permalink: pretty
+#permalink: pretty
 #permalink: /:title
 #permalink: /:categories/:year/:month/:day/:title:output_ext
+permalink: /posts/:title
 
 keywords: [podcast, jekyll]
 
