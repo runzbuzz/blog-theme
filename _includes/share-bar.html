@@ -1,0 +1,157 @@
+<div id="share-bar">
+	
+    <h4 style="vertical-align: center;">Share this post!</h4>
+
+    <div class="share-buttons">
+        <a class="facebook-color" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Facebook" >   				
+            
+   				 <i class="fab fa-facebook-f  share-button"> </i>    				 	     				    		
+        </a>
+
+        <a class="x-twitter-color"  href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Twitter" >
+            <!-- 
+            <i class="fab  fa-square-x-twitter  x-twitter-color share-button"> </i>-->
+            <i class="fab  fa-x-twitter share-button"> </i>
+            
+
+
+                
+        </a>
+
+        <a class="pinterest-color"  href="http://pinterest.com/pin/create/button/?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Pinterest" >
+            <!-- 
+            <i class="fab fa-pinterest-square pinterest-color share-button"> </i>-->
+                        <i class="fab fa-pinterest-p  share-button"> </i>
+
+        </a>
+
+        <a class="tumblr-color"  href="http://www.tumblr.com/share/link?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Tumblr" >
+            <!-- 
+            <i class="fab fa-tumblr-square tumblr-color share-button"> </i>
+            -->
+            <i class="fab fa-tumblr  share-button"> </i>
+
+        </a>
+
+        <a class="reddit-color" href="http://www.reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Reddit" >
+            <!-- 
+            <i class="fab  fa-square-reddit reddit-color share-button"> </i>-->
+            <i class="fab  fa-reddit  share-button"> </i>
+
+        </a>
+
+        <a class="linkedin-color"  href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on LinkedIn" >
+            <!-- 
+            <i class="fab fa-linkedin linkedin-color share-button"> </i>-->
+            <i class="fab fa-linkedin-in  share-button"> </i>
+
+        </a>
+        <a  class="envelope-color" href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{ site.baseurl }}{{ page.url }}"
+            title="Share via Email" >
+            <i class="fa fa-envelope  share-button"> </i>
+        </a>
+    </div>
+
+</div>
+
+
+<style type="text/css">
+
+
+
+
+
+
+.share-buttons a{
+	text-align: left;
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 1px solid #909090;
+	border-radius: 100%;
+	background-color: #8292a2;	
+} 
+
+.share-buttons a i{
+	font-size: 20px;
+	color: #EDEDED;
+	//border: 1px solid #9090FF;  
+    /*The folloing lines are to center the icones */
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);	
+}
+
+
+
+
+
+
+#share-bar{
+	padding: 2rem;
+	text-align: center;
+}
+
+#share-bar h4 {
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+.share-buttons {
+//    font-size: 2rem;	
+//    text-align: center;
+}
+
+
+
+.share-buttons a:hover {
+	//background-color: transparent !important;
+}
+
+
+
+
+/* Each button */
+.share-button {
+    margin: 0px;
+    margin-right: 0.4rem;
+    color: #a2a2a2;
+}
+
+
+
+.facebook-color:hover {
+    background-color: #3b5998 !important;
+}
+.x-twitter-color:hover {
+    background-color: #111111 !important;
+}
+.pinterest-color:hover {
+    background-color: #cb2027 !important;
+}
+.tumblr-color:hover {
+    background-color: #32506d !important;
+}
+.reddit-color:hover {
+    background-color: #ff4500 !important;
+}
+.linkedin-color:hover {
+    background-color: #007bb5 !important;
+}
+.envelope-color:hover {
+    background-color: #222222 !important;
+}
+    
+</style>
