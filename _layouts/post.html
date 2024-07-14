@@ -29,7 +29,7 @@ layout: default
                   {% unless forloop.last %}&nbsp;{% endunless %} 
                 {% endfor %}
         </div>
-        <h1 style="padding-top: 1.5rem;">{{page.title}}</h1>
+        <h1 style="padding-top: 1.5rem; text-align: center;">{{page.title}}</h1>
 
         	{%if page.length%}
 		        
@@ -42,17 +42,29 @@ layout: default
 		        {{page.length}}—minute read </p>
 			{%endif%}
         
-                <p style=" text-align: center; color: #6b8fab;font-size: 1.1rem; padding-top: 0.75rem; padding-bottom: 1rem;font-style: italic;">{{page.description}}</p>
+                <p style="text-align: center; color: #6b8fab;font-size: 1.1rem; padding-top: 0.75rem; padding-bottom: 1rem;font-style: italic;">{{page.description}}</p>
         
         {% if page.cover %}
         		<!--
                 <img src="{{ page.cover | prepend: "/assets/forposts/" | absolute_url}}" alt="Post Cover">
                 -->
         {% endif %}
-        
-                
+		
+		{%if page.toc%}
+		<h2 style="text-align: center;">
+		Content
+		</h2>
+		<div style="justify-content: center; align-items: center; text-align: center; margin-bottom: 1rem; ">
+		<div style=" list-style-position: inside; display: inline-block; text-align: center;   margin: auto;">
+		<style>
+			.toc-it{text-align: left;  margin: 0.5rem; font-style: normal !important;}
+			.toc-it a{font-style: normal !important;}
+		</style>        
+		{% include toc.html html=content ordered=true flat_toc=true h_max=1 item_class='toc-it'%}
+		</div>
+		</div>  
+		{% endif %}              
         {{ content }}
-
 
 
 
