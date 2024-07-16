@@ -83,6 +83,7 @@ layout: default
 			  display: table;
 			  counter-increment: item;
 			  margin-bottom: 0;
+		      margin-left: -0.1em;
 			}
 			
 			.toc-li .toc-ol > .toc-li:before {
@@ -98,7 +99,7 @@ layout: default
 				margin: 0.5rem;
 			}	
 		</style>        
-		{% include toc.html html=content ordered=true class='toc-ol' submenu_class='toc-ol' flat_toc=false h_max=3 item_class='toc-li'%}
+		{% include toc.html html=content ordered=true class='toc-ol' submenu_class='toc-ol' flat_toc=false h_max=2 item_class='toc-li'%}
 		</div>
 		</div>  
 		{% endif %}    
