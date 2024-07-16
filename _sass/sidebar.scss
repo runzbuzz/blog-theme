@@ -31,7 +31,9 @@ $linkedin: #0e76a8;
         ul{
             list-style-type: none;
             li{
-                margin-bottom: 3px;
+                //margin-bottom: 3px;
+                margin-bottom: 0.2em;
+                margin-top: 0;
                 a{
                     color: $base-color;
                 }

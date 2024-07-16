@@ -57,22 +57,54 @@ layout: default
 		<div style="justify-content: center; align-items: center; text-align: center; margin-bottom: 1rem; ">
 		<div style=" list-style-position: inside; display: inline-block; text-align: center;   margin: auto;">
 		<style>
-			.toc-it{text-align: left;  margin: 0.5rem; font-style: normal !important;}
-			.toc-it a{font-style: normal !important;}
+			.toc-li{text-align: left;  margin: 0.5rem; font-style: normal !important;}
+			.toc-li a{font-style: normal !important;}
+			
+			.toc-ol {
+			  list-style-type: none;
+			  counter-reset: item;
+			  margin: 0;
+			  padding: 0;
+			}
+			
+			.toc-ol > .toc-li {
+			  display: table;
+			  counter-increment: item;
+			  margin-bottom: 0.6em;
+			}
+			
+			.toc-ol > .toc-li:before {
+			  content: counters(item, ".") ". ";
+			  display: table-cell;
+			  padding-right: 0.6em;    
+			}
+			
+			.toc-li .toc-ol > .toc-li {
+			  display: table;
+			  counter-increment: item;
+			  margin-bottom: 0;
+			}
+			
+			.toc-li .toc-ol > .toc-li:before {
+			  content: counters(item, ".") " ";
+			  display: table-cell;
+			  padding-right: 0.6em;    
+			}
+			
+			ol {
+				list-style-position: inside; // This is for the generic posts. So the items markers (or pullet points) does not appear outside the justified block of text.
+			}
+			li {
+				margin: 0.5rem;
+			}	
 		</style>        
-		{% include toc.html html=content ordered=true flat_toc=true h_max=1 item_class='toc-it'%}
+		{% include toc.html html=content ordered=true class='toc-ol' submenu_class='toc-ol' flat_toc=false h_max=3 item_class='toc-li'%}
 		</div>
 		</div>  
-		{% endif %}              
+		{% endif %}    
+		          
         {{ content }}
-
-
-
-
-
-
-
-{% include share-bar.html %}
+		{% include share-bar.html %}
     
 </div>
 
