@@ -1,6 +1,7 @@
 analytics-id: 
 #Pages
 pages:
+  - {name: 'Info', link: 'infopage'}
   - {name: 'Episodes', link: 'episodes.html'}
   - {name: 'Patreon', link: '#'}
   - {name: 'Shop', link: '#'}
