@@ -27,7 +27,7 @@ layout: default
               {% if site.data.settings.translate-date == true %}
                 <i class="far fa-calendar" aria-hidden="true"></i>{%- include date.html date=post.date -%}<span> 
                 {%if post.length%}
-                 — </span><i class="far fa-clock"></i> {{post.length}}-minute read
+                 — </span><span style="white-space: nowrap;"><i class="far fa-clock"></i>  {{post.length}}-minute </span> read
                  {%endif%}
               {% else %}
                 <i class="far fa-calendar" aria-hidden="true"></i>{{ post.date | date_to_long_string}}<span>
