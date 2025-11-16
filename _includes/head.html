@@ -53,9 +53,12 @@
         
         <!-- SEO Plugin -->
         {% seo %}
-
+	  {% if jekyll.environment != 'development' %}
+    <h2> LIVE MODE </h2><br>
+	{% endif %}
+	
         <!-- Google Analytics -->
-        {% if site.data.settings.analytics-id%}
+        {% if site.data.settings.analytics-id and jekyll.environment == 'production' %}
             {%- include analytics.html -%}
         {% endif %}
         <!-- End Google Analytics -->
