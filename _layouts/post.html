@@ -36,6 +36,12 @@ layout: default
 		        <p style=" text-align: center; color: #6b8fab;font-size: 1rem; padding-top: 0.5rem; font-style: bold;"> 
 		        
 		        {% if page.author %}Written by {{page.author}} <span class="dot"></span> {% endif %}
+		        
+		        % if page.author %}
+		        {% assign author = site.data.authors[page.author] %}
+				Written by  <a href="{{ author.url }}">{{ author.name }}</a>
+		        <span class="dot"></span>
+		        {% endif %}
 		      
 		        Updated {{ page.date | date: "%-d %B %Y" }}
 		        <span class="dot"></span>
